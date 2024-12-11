@@ -1,15 +1,119 @@
 * {
     box-sizing: border-box;
+    font-family:'montserrat', sans-serif;
     margin: 0;
     padding: 0;
 }
-
 body {
-
+    color: #263138;
 }
-
 header{
     background-color: #FF9A6C;
-    margin: 10px;
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left:80px ;
+    padding-right: 80px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+header nav a {
+    color: #ffffff;
+    font-weight: 700;
+    padding: 32px;
+    text-decoration: none;
+}
+#inicio{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    /*top, direita. baixo , esqquerda*/
+    padding: 24px 80px 12px 80px;
+    position: relative;
+}
+h1,
+h2{
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+.paragrafo{
+    line-height: 150%;
+    margin-bottom: 37px;
+}
+.botao {
+    background-color: #ff7255;
+    border-radius: 8px;
+    color: #ffffff;
+    /* vertical , horizontal*/
+    padding: 16px  32px;
+    text-decoration: none;
+}
+.botao-trasparente {
+    background-color: transparent;
+    color: #FF9A6C;
+    padding: 16px  32px;
+    text-underline-offset: 4px;
+}
+.absoluto{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -19;
+}
+
+#clinica{
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 64px 80px;
+}
+#clinica li {
+    margin-bottom: 16px;
+    margin-left: 32px;
+}
+#famacia {
+    padding: 64px 80px;
+    text-align: center;
+}
+#famacia img {
+    margin: 64px auto;
+}
+#duvidas .paragrafo {
+    max-width: 950px;
+    margin: 0 auto;
+}
+#duvidas {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 64px;
+    padding: 64px 80px;
+
+}
+.duvida{
+    position: relative;
+    
+}
+.duvida h3 {
+    border: 2px solid #ff7255;
+    border-radius: 8px;
+    cursor: pointer;
+    
+    padding: 24px;
+}
+.duvida img {
+    position: absolute;
+    top: 33px;
+    right: 14px;
+}
+.duvida .paragrafo{
+    border-right: 1px solid #ff7255;
+    border-bottom: 1px solid #ff7255;
+    border-left: 1px solid #ff7255;
+    border-radius: 1px solid #ff7255;
+    margin-top: -8px;
+    padding: 24px;
 }
