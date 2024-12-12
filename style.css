@@ -28,11 +28,11 @@ header nav a {
     align-items: center;
     gap: 32px;
     /*top, direita. baixo , esqquerda*/
-    padding: 24px 80px 12px 80px;
+    padding: 24px 80px 128px 80px;
     position: relative;
 }
 h1,
-h2{
+h2 {
     font-weight: 700;
     font-size: 32px;
     margin-bottom: 32px;
@@ -45,6 +45,7 @@ h2{
     background-color: #ff7255;
     border-radius: 8px;
     color: #ffffff;
+    text-transform:uppercase ;
     /* vertical , horizontal*/
     padding: 16px  32px;
     text-decoration: none;
@@ -53,6 +54,7 @@ h2{
     background-color: transparent;
     color: #FF9A6C;
     padding: 16px  32px;
+    text-transform: uppercase;
     text-underline-offset: 4px;
 }
 .absoluto{
@@ -60,7 +62,7 @@ h2{
     bottom: 0;
     left: 0;
     width: 100%;
-    z-index: -19;
+    z-index: -9;
 }
 
 #clinica{
@@ -80,7 +82,7 @@ h2{
 #famacia img {
     margin: 64px auto;
 }
-#duvidas .paragrafo {
+#farmacia .paragrafo {
     max-width: 950px;
     margin: 0 auto;
 }
@@ -88,32 +90,68 @@ h2{
     display: flex;
     align-items: center;
     flex-direction: column;
-    text-align: center;
     gap: 64px;
     padding: 64px 80px;
 
 }
 .duvida{
+    display: flex;
     position: relative;
-    
+    flex-direction: column;
 }
 .duvida h3 {
     border: 2px solid #ff7255;
     border-radius: 8px;
     cursor: pointer;
-    
     padding: 24px;
 }
 .duvida img {
     position: absolute;
     top: 33px;
-    right: 14px;
+    right: 24px;
 }
 .duvida .paragrafo{
     border-right: 1px solid #ff7255;
     border-bottom: 1px solid #ff7255;
     border-left: 1px solid #ff7255;
     border-radius: 1px solid #ff7255;
-    margin-top: -8px;
+    border-radius: 8px;
+    margin-top: -27px;
     padding: 24px;
+}
+footer{
+    background-color: rgba(255, 152, 108, 0.25);
+    display: flex;
+    justify-content: space-between;
+    gap: 90px;
+    padding: 64px 80px;
+}
+footer img,
+footer .titulo{
+    display: block;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+footer p {
+    margin-bottom: 16px;
+}
+footer nav a {
+    color: #ff0000;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    max-width: 350px;
+}
+footer p a{
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+#fim{
+    background-color: #263138;
+    text-align: center;
+    padding: 24px;
+    color: aquamarine
+}
+#fim a{
+    color: #ff0000;
 }
