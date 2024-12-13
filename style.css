@@ -22,12 +22,17 @@ header nav a {
     font-weight: 700;
     padding: 32px;
     text-decoration: none;
+    transition: 1s;
+}
+header nav a:hover{
+    color: rgb(102, 255, 0);
+
 }
 #inicio{
     display: flex;
     align-items: center;
     gap: 32px;
-    /*top, direita. baixo , esqquerda*/
+    /*top, direita.baixo , esqquerda*/
     padding: 24px 80px 128px 80px;
     position: relative;
 }
@@ -44,11 +49,16 @@ h2 {
 .botao {
     background-color: #ff7255;
     border-radius: 8px;
-    color: #ffffff;
+    color: #000000;
     text-transform:uppercase ;
     /* vertical , horizontal*/
     padding: 16px  32px;
     text-decoration: none;
+    transition: 1s;
+}
+.botao:hover{
+    background-color: transparent;
+    color: #ff7255;
 }
 .botao-trasparente {
     background-color: transparent;
@@ -56,6 +66,11 @@ h2 {
     padding: 16px  32px;
     text-transform: uppercase;
     text-underline-offset: 4px;
+    transition: 1s;
+}
+.botao-trasparente:hover{
+    background-color: #FF9A6C;
+    color: #000000;
 }
 .absoluto{
     position: absolute;
@@ -92,6 +107,7 @@ h2 {
     flex-direction: column;
     gap: 64px;
     padding: 64px 80px;
+    
 
 }
 .duvida{
@@ -99,11 +115,13 @@ h2 {
     position: relative;
     flex-direction: column;
 }
+
 .duvida h3 {
     border: 2px solid #ff7255;
     border-radius: 8px;
     cursor: pointer;
-    padding: 24px;
+    padding: 20px;
+    background-color: #00000023;
 }
 .duvida img {
     position: absolute;
@@ -117,7 +135,17 @@ h2 {
     border-radius: 1px solid #ff7255;
     border-radius: 8px;
     margin-top: -27px;
-    padding: 24px;
+    padding:0 24px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+.duvida.ativa .paragrafo{
+    height: fit-content;
+    opacity: 1;
+    padding: 34px;
+    color: #000000;
 }
 footer{
     background-color: rgba(255, 152, 108, 0.25);
