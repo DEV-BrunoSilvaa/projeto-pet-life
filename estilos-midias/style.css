@@ -5,6 +5,7 @@
     padding: 0;
 }
 body {
+    overflow-x: hidden;
     color: #263138;
 }
 header{
@@ -51,6 +52,8 @@ h2 {
     border-radius: 8px;
     color: #000000;
     text-transform:uppercase ;
+    width: auto;
+    height: auto;
     /* vertical , horizontal*/
     padding: 16px  32px;
     text-decoration: none;
@@ -64,6 +67,8 @@ h2 {
     background-color: transparent;
     color: #FF9A6C;
     padding: 16px  32px;
+    width: auto;
+    height: auto;
     text-transform: uppercase;
     text-underline-offset: 4px;
     transition: 1s;

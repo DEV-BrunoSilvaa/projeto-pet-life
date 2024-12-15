@@ -1,0 +1,120 @@
+@media only screen and  (max-width: 1351px)
+{
+    
+    .botao,
+    .botao-trasparente{
+        display: flex;
+        width: 80%;
+        height: 50px;
+        margin: 8px;
+    }
+}
+@media only screen and (max-width: 1137px) {
+    .botao,
+    .botao-trasparente{
+        width: 90%;
+        height: 50px;
+    
+}
+
+    .imagem1{
+        width: 490px;
+        height: 540px;
+    }
+}
+@media only screen and (max-width: 1007px) {
+    .paragrafo{
+        font-size: 15px;
+    }
+    .botao,
+    .botao-trasparente{
+        width: 110%;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+    .imagem1{
+        width: 450px;
+        height: 500px;
+    }
+    .absoluto{
+        display: flex;
+        margin-bottom: 100px;
+        margin-top: 5%;
+    }
+}
+@media only screen and (max-width: 837px) {
+    .imagem1{
+        width: 400px;
+        height: 450px;
+    }
+    .botao,
+    .botao-trasparente{
+        font-size: 11px;
+    }
+    .absoluto{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 667px) {
+    *{
+        flex-direction: column;
+    }
+    .absoluto{
+        display: none;
+    }
+    #começo img{
+        margin-bottom: 10px;
+    }
+    #começo a{
+        font-size: 9px;
+        margin-top: -10px;
+        justify-content: space-between;
+    } 
+    #clinica h2{
+        margin-top: -100px;
+    }
+    #famacia img{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 490px;
+        height: 490px;
+    }
+    #final .titulo, a{
+        font-size: 15px;
+        padding: 14px;
+        
+    }
+}
+@media only screen and (max-width: 575px){
+    *{
+        flex-direction: column;
+    }
+    
+    .absoluto{
+        display: none;
+    }
+    #começo{
+        width: 111%;
+        height: 120%;
+    }
+    #começo .excluir{
+        display: none;
+    }
+    #começo img{
+        margin-bottom: 6px;
+    }#começo nav{
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        font-size: 7px;
+    }
+    #famacia img{
+        width: 350px;
+        height: 350px;
+    }
+}
+
