@@ -12,3 +12,10 @@ elementosDuvida.forEach(function (duvida) {
 //function nome(argumento){
     //conteudo funçao
 //}
+const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });

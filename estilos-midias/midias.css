@@ -60,6 +60,30 @@
     *{
         flex-direction: column;
     }
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        font-size: 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        overflow: hidden;
+        z-index: 999; /* Para evitar sobreposição */
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+
     .absoluto{
         display: none;
     }
@@ -86,21 +110,22 @@
         padding: 14px;
         
     }
-}
+
 @media only screen and (max-width: 575px){
     *{
         flex-direction: column;
     }
-    
+
     .absoluto{
         display: none;
     }
+
     #começo{
-        width: 111%;
-        height: 120%;
+        width: 100%;
+        height: 80%;
     }
-    #começo .excluir{
-        display: none;
+    #começo a{
+        font-size: 15px
     }
     #começo img{
         margin-bottom: 6px;
